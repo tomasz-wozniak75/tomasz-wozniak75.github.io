@@ -1,0 +1,407 @@
+@charset "UTF-8";
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+.p-experience__tool-set li, .p-skill .badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F7F8FA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #434E5E;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+a {
+  color: #434E5E;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.dt-start, .dt-end {
+  color: #aab4c3;
+  font-size: 0.875rem;
+}
+
+.dt-start + .dt-end:before {
+  content: "-";
+  margin-right: 0.2rem;
+}
+
+.toggle {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  height: 0;
+}
+.toggle + .toggle__mark:hover {
+  color: #aab4c3;
+}
+.toggle:checked ~ .p-experience__details {
+  height: unset;
+}
+.toggle:checked + .toggle__mark::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin-right: 0.5rem;
+}
+.toggle:not(:checked) + .toggle__mark::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin-right: 0.5rem;
+}
+
+.hresume {
+  position: relative;
+  max-width: 1000px;
+  margin: 30px auto 60px auto;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  background-color: white;
+}
+.hresume__header {
+  display: flex;
+  background: #434E5E;
+  color: rgba(255, 255, 255, 0.9);
+  height: 220px;
+}
+.hresume__header img {
+  width: 220px;
+  height: 220px;
+}
+.hresume__detailes {
+  padding: 3rem;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(4, auto) 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 3rem;
+}
+
+.p-about {
+  flex: 1;
+  padding: 1.5rem;
+}
+.p-about .p-name {
+  font-size: 2.25rem;
+  letter-spacing: 0.175rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.p-about .p-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.p-about a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.p-about a:hover {
+  color: white;
+}
+
+.p-contact {
+  display: flex;
+}
+.p-contact__internet {
+  display: block;
+}
+.p-contact__internet a {
+  display: flex;
+  align-items: center;
+}
+.p-contact__internet a::before {
+  width: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.p-contact__internet .url-ln::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "";
+}
+.p-contact__internet .p-tel::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.p-contact__internet .u-email::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "";
+}
+.p-contact__address {
+  padding-left: 3rem;
+}
+
+.detailes__title {
+  font-size: 1.25rem;
+  position: relative;
+  color: #434E5E;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.detailes__title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #8d9aad;
+}
+
+.h-event:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.h-event .p-name {
+  color: #434E5E;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+.h-event .p-summary {
+  font-size: 0.875rem;
+}
+
+.list__p-skill, .list__achievement, .list__p-education, .list__certificate, .list__p-experience, .p-main-summary {
+  color: #58677c;
+}
+
+.p-main-summary {
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+
+.list__p-skill {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.p-skill {
+  margin-bottom: 1.5rem;
+}
+.p-skill__category {
+  font-size: 1rem;
+  color: #434E5E;
+}
+.p-skill .badge {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+.p-skill .badge:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.p-skill .value {
+  font-size: 0.8125rem;
+  color: #434E5E;
+  margin-bottom: 0.5rem;
+}
+.p-skill .value .progress {
+  height: 0.6rem;
+  border-radius: 2px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+}
+.p-skill .value .progress__bar {
+  background-color: #434E5E;
+}
+
+.list__achievement {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.achievement {
+  padding-left: 1.5rem;
+  position: relative;
+}
+.achievement::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  left: 0;
+  font-size: 0.85rem;
+  color: #aab4c3;
+}
+
+.list__p-education {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.p-education .field-name {
+  display: block;
+  font-weight: bold;
+}
+
+.list__certificate {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.list__p-experience {
+  grid-column: 1;
+  grid-row: 2/span 5;
+}
+
+.p-experience {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.p-experience__container {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+.p-experience__container:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: #aab4c3;
+  left: 6px;
+  top: 4px;
+  position: absolute;
+}
+.p-experience__employment {
+  position: relative;
+}
+.p-experience__employment::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  border: 4px solid #58677c;
+  background: white;
+  border-radius: 50%;
+}
+.p-experience__employment:not(:last-child) {
+  padding-bottom: 3rem !important;
+  margin: 0;
+}
+.p-experience__employment a {
+  text-decoration: underline;
+}
+.p-experience__employment a:hover {
+  color: #aab4c3;
+}
+.p-experience__employment .customer-url {
+  display: block;
+}
+.p-experience__employment > .p-name:first-of-type {
+  text-decoration: underline double;
+}
+.p-experience__employment > .p-name, .p-experience__role {
+  font-size: 1.125rem;
+  color: #434E5E;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.p-experience__customer {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  color: #58677c;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.p-experience__role {
+  position: relative;
+  flex-basis: 100%;
+  margin-top: 1rem;
+}
+.p-experience__role::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -28px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #58677c;
+  background: white;
+  border-radius: 50%;
+}
+.p-experience__details, .p-experience__links, .p-experience__summary {
+  flex-basis: 100%;
+}
+.p-experience__details ul, .p-experience__links ul, .p-experience__summary ul {
+  padding-inline-start: 2.5rem;
+  list-style: disc;
+}
+.p-experience__details {
+  height: 0;
+  overflow: hidden;
+}
+.p-experience__tool-set {
+  margin-top: 0.25rem;
+  flex-basis: 100%;
+}
+.p-experience__tool-set li {
+  color: #fff;
+  background-color: #434E5E;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+.p-experience .p-name {
+  flex-basis: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
