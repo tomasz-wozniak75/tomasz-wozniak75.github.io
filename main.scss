@@ -308,19 +308,6 @@ a {
     font-size: 0.8125rem;
     color: #434E5E;
     margin-bottom: 0.5rem;
-
-    .progress {
-      height: 0.6rem;
-      border-radius: 2px;
-      display: flex;
-      overflow: hidden;
-      font-size: 0.75rem;
-      background-color: #e9ecef;
-
-      &__bar {
-        background-color: #434E5E;
-      }
-    }
   }
 }
 
