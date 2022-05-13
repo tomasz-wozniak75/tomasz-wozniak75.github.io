@@ -290,7 +290,11 @@ a {
 }
 
 .certificate {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.certificate__badge_img {
+  display: block;
 }
 
 .list__p-experience {
