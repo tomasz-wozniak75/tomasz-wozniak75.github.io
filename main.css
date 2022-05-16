@@ -293,10 +293,6 @@ a {
   padding-bottom: 1rem;
 }
 
-.certificate__badge_img {
-  display: block;
-}
-
 .list__p-experience {
   grid-column: 1;
   grid-row: 2/span 5;
