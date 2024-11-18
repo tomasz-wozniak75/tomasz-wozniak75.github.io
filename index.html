@@ -49,11 +49,11 @@
         <div class="list__certificate">
             <h2 class="details__title">Certificates</h2>
 
-              <div class="certificate h-event">
+            <div class="certificate h-event">
                 <p class="p-name">CKAD Certified Kubernetes Application Developer</p>
                 <div class="certificate__badge">
                     <a target="_blank" href="https://www.credly.com/badges/d6a01a72-abcd-4f3d-a0ac-91dffcae9c75/embedded">
-                        <img class="certificate__badge_img" width="105" height="105" alt="" src="https://images.credly.com/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png"/>
+                        <img class="certificate__badge_img" width="105" height="105" alt="" src="k8s-cert.png"/>
                     </a>
                 </div>
             </div>
@@ -260,6 +260,37 @@
             <h2 class="details__title">Work Experience</h2>
 
             <div class="p-experience__container">
+
+                <div class="p-experience h-event">
+                    <div class="p-experience__role">Software engineer</div>
+                    <div class="p-experience__customer">bp.com</div>
+                    <time class="dt-start" datetime="04/2023">04/2023</time>
+                    <time class="dt-end"></time>
+                    <h2 class="p-name">BP DevInfra build team</h2>
+                    <div class="p-experience__summary">
+                        <p>I was supporting migration of various BP projects to Bazel build tool by providing:
+                        <ul>
+                            <li>Bazel tooling in form of Bazel rules and macros</li>
+                            <li>Preparing and tuning Azure DevOps pipelines</li>
+                            <li>Maintaining Bazel remote cache to speed up builds</li>
+                            <li>Introducing Bazel remote builds on Buildbarn servers hosted on AWS kubernetes clusters</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="p-experience__tool-set">
+                        <ul>
+                            <li>Bazel</li>
+                            <li>Buildbarn</li>
+                            <li>Kubernetes</li>
+                            <li>Helm</li>
+                            <li>Git</li>
+                            <li>Azure DevOps</li>
+                            <Li>Java</Li>
+                            <Li>JavaScript</Li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="p-experience__employment h-event">
                     <h2 class="p-name">Equal Experts</h2>
                     <div class="customer-url"><a target="_blank"  href="https://www.equalexperts.com/">https://www.equalexperts.com/</a></div>
@@ -383,9 +414,9 @@
                         <h2 class="p-name">Measurement-data Distributed File System [MDFS]</h2>
                         <div class="p-experience__summary">
                             <p>MDFS it is a file system dedicated for a big
-                            data applications, which takes into account measurement data specific characteristics. Its
-                            main task is to connect many hard drives connected to different machines into one file system visible
-                            under one path namespace.
+                                data applications, which takes into account measurement data specific characteristics. Its
+                                main task is to connect many hard drives connected to different machines into one file system visible
+                                under one path namespace.
                             </p>
                         </div>
                         <input type="checkbox" id="amsDetails" class="toggle"/>
@@ -428,7 +459,7 @@
                                 <li>Admin web application to manage MDFS instance</li>
                             </ul>
                         </div>
-                         <div class="p-experience__tool-set">
+                        <div class="p-experience__tool-set">
                             <ul>
                                 <li>Java8</li>
                                 <li>Java NIO API</li>
@@ -570,10 +601,10 @@
                         <h2 class="p-name">jBEAM Cluster</h2>
                         <div class="p-experience__summary">
                             <p>
-                            jBEAM Cluster for AMSonline is a software to parallel calculation over big measurement data by
-                            connecting many hosts in one computation engine. It is multithreading, multi process and multisystem
-                            solution. Cluster was presented at automotive exhibition in Stuttgart, June 2017 and now is distributed as
-                            product
+                                jBEAM Cluster for AMSonline is a software to parallel calculation over big measurement data by
+                                connecting many hosts in one computation engine. It is multithreading, multi process and multisystem
+                                solution. Cluster was presented at automotive exhibition in Stuttgart, June 2017 and now is distributed as
+                                product
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -594,9 +625,9 @@
                         <h2 class="p-name">Chemotaxis and Migration Tool</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Chemotaxis and Migration Tool is a plugin for ImageJ that provides graphs and statistical tests
-                            for analysis of experimental data. After cell tracking, the cells‘ paths can be plotted and analysed for
-                            chemotactical effects.
+                                Chemotaxis and Migration Tool is a plugin for ImageJ that provides graphs and statistical tests
+                                for analysis of experimental data. After cell tracking, the cells‘ paths can be plotted and analysed for
+                                chemotactical effects.
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -615,23 +646,23 @@
                         <h2 class="p-name">JSON Scopes</h2>
                         <div class="p-experience__summary">
                             <p>
-                            JSON Scopes is an open source project conceptually similar to GraphQL.
-                            Main target is to get rid of Data Transfer Objects [DTO] to avoid code duplications. Library
-                            provides for Spring MVC additional annotation which allows to describe which entities should be
-                            serialized, such list of entities types is called serialization scope
+                                JSON Scopes is an open source project conceptually similar to GraphQL.
+                                Main target is to get rid of Data Transfer Objects [DTO] to avoid code duplications. Library
+                                provides for Spring MVC additional annotation which allows to describe which entities should be
+                                serialized, such list of entities types is called serialization scope
                             </p>
                         </div>
                         <input type="checkbox" id="scopesDetails" class="toggle"/>
                         <label class="toggle__mark" for="scopesDetails">Details</label>
                         <div class="p-experience__details">
                             <p>
-                            During serialization, objects which are out of serialization scope are terminated by special proxy notation in JSON, which
-                            allows to stop serialization at end of the specified scope. During deserialization proxies in JSON are
-                            deserialized into Hibernate lazy proxies. Result of such deserialization is detached entities network which could be
-                            merged by call to JPA EntityManager.merge() method. Library solves also problem with cyclic references which
-                            are common in JPA. Library has deep integration with Spring Framework and Hibernate.
-                            Library reduce backend code only to real business code and eliminates simple getter &amp; setter
-                            calls between entities and DTO
+                                During serialization, objects which are out of serialization scope are terminated by special proxy notation in JSON, which
+                                allows to stop serialization at end of the specified scope. During deserialization proxies in JSON are
+                                deserialized into Hibernate lazy proxies. Result of such deserialization is detached entities network which could be
+                                merged by call to JPA EntityManager.merge() method. Library solves also problem with cyclic references which
+                                are common in JPA. Library has deep integration with Spring Framework and Hibernate.
+                                Library reduce backend code only to real business code and eliminates simple getter &amp; setter
+                                calls between entities and DTO
                             </p>
                             <ul>
                                 <li>Eliminates CRUD operations mistakes</li>
@@ -666,8 +697,8 @@
                         <h2 class="p-name">Java to SAP integration for Roche - PoC</h2>
                         <div class="p-experience__summary">
                             <p>
-                            The purpose of this project was to check integration possibilities between Java and SAP system
-                            with usage of SAP Java Connector (JCo 3).
+                                The purpose of this project was to check integration possibilities between Java and SAP system
+                                with usage of SAP Java Connector (JCo 3).
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -697,10 +728,10 @@
                         <h2 class="p-name">Chronic Treatment Solution Platform</h2>
                         <div class="p-experience__summary">
                             <p>
-                            For this project I've designed and implemented library which allows to use Spring Dependency
-                            Injection in OSGi environment in totally transparent way. It allows for clean Spring code not bound to
-                            OSGi environment and preservers OSGi dynamism so it is an advantage to existing solutions like Spring Dynamic
-                            Modules or OSGi Blueprint spec.
+                                For this project I've designed and implemented library which allows to use Spring Dependency
+                                Injection in OSGi environment in totally transparent way. It allows for clean Spring code not bound to
+                                OSGi environment and preservers OSGi dynamism so it is an advantage to existing solutions like Spring Dynamic
+                                Modules or OSGi Blueprint spec.
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -744,11 +775,11 @@
                         <h2 class="p-name">MSdialog wave 1.</h2>
                         <div class="p-experience__summary">
                             <p>
-                            MSdialog is a system supporting patients with multiple sclerosis, health care professionals and
-                            nurses in their daily activities. System developed as medical device, multinational (many
-                            languages e.g. Arabic),
-                            worldwide (patients could be in different time zones, system without midnight).
-                            Project takeover from Cognizant Technology
+                                MSdialog is a system supporting patients with multiple sclerosis, health care professionals and
+                                nurses in their daily activities. System developed as medical device, multinational (many
+                                languages e.g. Arabic),
+                                worldwide (patients could be in different time zones, system without midnight).
+                                Project takeover from Cognizant Technology
                             </p>
                         </div>
                         <input type="checkbox" id="msdialogDetails" class="toggle"/>
@@ -795,13 +826,13 @@
                         <h2 class="p-name">MSdialog CE marking</h2>
                         <div class="p-experience__summary">
                             <p>
-                            MSdialog is a system supporting patients with Multiple sclerosis, health care professionals and
-                            nurses in their daily activities. System developed as medical device, multinational (many languages
-                            e.g. Arabic), worldwide (patients could be in different time zones, system without midnight). MSdialog has web
-                            and mobile UI. System was powered by JBoss 6.1 EAP and Oracle 11. System was developed by Cognizant Technology
-                            Solutions CTS, Merck-Serono hired S3group to monitor project quality. I was responsible for weekly technical
-                            reports which measured technical debt and pointed out different problems in system architecture and
-                            implementation. I also supported our customer on sight in Cognizant offices (Pune - India)
+                                MSdialog is a system supporting patients with Multiple sclerosis, health care professionals and
+                                nurses in their daily activities. System developed as medical device, multinational (many languages
+                                e.g. Arabic), worldwide (patients could be in different time zones, system without midnight). MSdialog has web
+                                and mobile UI. System was powered by JBoss 6.1 EAP and Oracle 11. System was developed by Cognizant Technology
+                                Solutions CTS, Merck-Serono hired S3group to monitor project quality. I was responsible for weekly technical
+                                reports which measured technical debt and pointed out different problems in system architecture and
+                                implementation. I also supported our customer on sight in Cognizant offices (Pune - India)
                             </p>
                         </div>
                     </div>
@@ -813,10 +844,10 @@
                         <h2 class="p-name">Remote Telemonitoring Managed Service Northern Ireland (RTNI)</h2>
                         <div class="p-experience__summary">
                             <p>
-                            The large-scale implementation of a Remote Telemonitoring service in Northern Ireland with a
-                            target of 5000 people with long-term conditions having access to this service. This clinical design
-                            framework sets out the key elements of NI Remote Telemonitoring Managed Service. I developed integration services
-                            in BlueIntgrator server.
+                                The large-scale implementation of a Remote Telemonitoring service in Northern Ireland with a
+                                target of 5000 people with long-term conditions having access to this service. This clinical design
+                                framework sets out the key elements of NI Remote Telemonitoring Managed Service. I developed integration services
+                                in BlueIntgrator server.
                             </p>
                         </div>
                     </div>
@@ -828,11 +859,11 @@
                         <h2 class="p-name">Chronic Related Groups for Lombardia region [CReG]</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Chronic disease management in primary care, aims at providing a framework for the role of the
-                            case manager to better address chronic patients' needs across the healthcare continuum. CreG are expected to
-                            help creating a support organization for chronic disease management in the territory and to give an economic
-                            value to the case manager's work in established diagnostic and therapeutic paths. As system architect I
-                            advised our customer in the integration part of the system based on ESB and HL7 standards.
+                                Chronic disease management in primary care, aims at providing a framework for the role of the
+                                case manager to better address chronic patients' needs across the healthcare continuum. CreG are expected to
+                                help creating a support organization for chronic disease management in the territory and to give an economic
+                                value to the case manager's work in established diagnostic and therapeutic paths. As system architect I
+                                advised our customer in the integration part of the system based on ESB and HL7 standards.
                             </p>
                         </div>
                     </div>
@@ -851,9 +882,9 @@
                         <h2 class="p-name">License Manager</h2>
                         <div class="p-experience__summary">
                             <p>
-                            License Manager part of the Netact system License manager is an application to manage licenses
-                            which activates different functions in GSM and LTE networks. I was responsible for extending core
-                            functionality
+                                License Manager part of the Netact system License manager is an application to manage licenses
+                                which activates different functions in GSM and LTE networks. I was responsible for extending core
+                                functionality
                             </p>
                         </div>
                     </div>
@@ -865,11 +896,11 @@
                         <h2 class="p-name">Call Control Application CCA</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Call Control Application CCA was a is based on JAIN SLEE standard and is intended to control
-                            call flow and communicate with charging server via diameter protocol to charge subscribers. In the CCA are
-                            included following services MOC, USSD. Target runtime environment for that application was OpenCloud
-                            Rhino server compliant with JAIN SLEE standard. CGIN resource adapter was used to exchange CAP events whit
-                            MSC (Mobile Switching Center)
+                                Call Control Application CCA was a is based on JAIN SLEE standard and is intended to control
+                                call flow and communicate with charging server via diameter protocol to charge subscribers. In the CCA are
+                                included following services MOC, USSD. Target runtime environment for that application was OpenCloud
+                                Rhino server compliant with JAIN SLEE standard. CGIN resource adapter was used to exchange CAP events whit
+                                MSC (Mobile Switching Center)
                             </p>
                         </div>
                     </div>
@@ -903,8 +934,8 @@
                         <h2 class="p-name">Glassfish vs. JBoss evaluation.</h2>
                         <div class="p-experience__summary">
                             <p>
-                            The goal of this project was to choose an application server for the NSN. The evaluation was
-                            based on long running performance tests, which tested all JEE aspects
+                                The goal of this project was to choose an application server for the NSN. The evaluation was
+                                based on long running performance tests, which tested all JEE aspects
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -929,10 +960,10 @@
                         <h2 class="p-name">Lucene Projections</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Lucene Projections it was algorithm for large Lucene indexes, which was based on fact that
-                            queries composed of terms conjunction are expensive to evaluate. Algorithm pointed out most frequent terms
-                            conjunction and stored them. When in query terms conjunction appears (projection) it transformed query in such a way
-                            that Lucene was using projections sum instead of conjunction. Solution was based on specialized Lucene query.
+                                Lucene Projections it was algorithm for large Lucene indexes, which was based on fact that
+                                queries composed of terms conjunction are expensive to evaluate. Algorithm pointed out most frequent terms
+                                conjunction and stored them. When in query terms conjunction appears (projection) it transformed query in such a way
+                                that Lucene was using projections sum instead of conjunction. Solution was based on specialized Lucene query.
                             </p>
                         </div>
                     </div>
@@ -944,20 +975,20 @@
                         <h2 class="p-name">Minimal Perfect Hash Function</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Minimal perfect hash function maps a static set of N keys into a set of M integer numbers
-                            without collisions, where M is greater than N or equal to N. If M is equal to N, the function is called minimal.
+                                Minimal perfect hash function maps a static set of N keys into a set of M integer numbers
+                                without collisions, where M is greater than N or equal to N. If M is equal to N, the function is called minimal.
                             </p>
                         </div>
                         <input type="checkbox" id="mphfDetails" class="toggle"/>
                         <label class="toggle__mark" for="mphfDetails">Details</label>
                         <div class="p-experience__details">
                             <p>
-                            Solution was based on Jenkins hash function, which distributes keys into buckets up to 256 keys,
-                            this functions has low level of collisions. Mapping in buckets was made by algorithm,
-                            which was based on random graphs. Random graphs allow on small amount of data to record huge
-                            amount of information. Solution had to be very compact because this algorithm was used to create graphs.
-                            These graphs were used to described Internet sides and edges showed links between sides.
-                            Number of vertexes were about several billions.
+                                Solution was based on Jenkins hash function, which distributes keys into buckets up to 256 keys,
+                                this functions has low level of collisions. Mapping in buckets was made by algorithm,
+                                which was based on random graphs. Random graphs allow on small amount of data to record huge
+                                amount of information. Solution had to be very compact because this algorithm was used to create graphs.
+                                These graphs were used to described Internet sides and edges showed links between sides.
+                                Number of vertexes were about several billions.
                             </p>
                         </div>
                         <div class="p-experience__links">
@@ -975,10 +1006,10 @@
                         <h2 class="p-name">Carmel Algorithm for Lucene</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Carmel Algorithm was an algorithm for optimizing Lucene index size. Algorithm was based on fact
-                            that queries were composed of term’s sums; user is mostly interested in N-first results.
-                            This algorithm was pruning algorithm and its main goal was to reduce index size.
-                            Solution was based on writing new derived classes from Lucene framework classes.
+                                Carmel Algorithm was an algorithm for optimizing Lucene index size. Algorithm was based on fact
+                                that queries were composed of term’s sums; user is mostly interested in N-first results.
+                                This algorithm was pruning algorithm and its main goal was to reduce index size.
+                                Solution was based on writing new derived classes from Lucene framework classes.
                             </p>
                         </div>
                     </div>
@@ -997,19 +1028,19 @@
                         <h2 class="p-name">SIP Information system for public prosecutor's offices in Poland</h2>
                         <div class="p-experience__summary">
                             <p>
-                            This system allows prosecutors to collect all needed information about cases, crimes, exhibits
-                            and gives also access to external systems like REGON, PESEL, CEPIK, KCIK and KRK
+                                This system allows prosecutors to collect all needed information about cases, crimes, exhibits
+                                and gives also access to external systems like REGON, PESEL, CEPIK, KCIK and KRK
                             </p>
                         </div>
                         <input type="checkbox" id="ministryDetails" class="toggle"/>
                         <label class="toggle__mark" for="ministryDetails">Details</label>
                         <div class="p-experience__details">
                             <p>
-                            My main task in this project was to start-up and develop module which allows user to generate
-                            dynamic queries to system, user pointed out interesting data fields and conditions. This two things
-                            creates graph in which vertexes were tables and edges were connections between tables.
-                            Using this graph and shortest path query was generated. This module allows users unfamiliar with
-                            SQL to generate complex queries
+                                My main task in this project was to start-up and develop module which allows user to generate
+                                dynamic queries to system, user pointed out interesting data fields and conditions. This two things
+                                creates graph in which vertexes were tables and edges were connections between tables.
+                                Using this graph and shortest path query was generated. This module allows users unfamiliar with
+                                SQL to generate complex queries
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -1055,8 +1086,8 @@
                         <h2 class="p-name">Control system for automatic warehouse - PANOPA</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Control system for automatic warehouse for PANOPA, company which cooperates with VW in Swarzedz.
-                            I was responsible for communication system between VW and PANOPA based on the IBM MQ
+                                Control system for automatic warehouse for PANOPA, company which cooperates with VW in Swarzedz.
+                                I was responsible for communication system between VW and PANOPA based on the IBM MQ
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -1081,10 +1112,10 @@
                         <h2 class="p-name">Central Register of Vehicles and Drivers [CEPiK ]</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Central database storing information about all vehicles, their owners and drivers in Poland.
-                            Large scale system - 3500 clients, 4 TB of data, 20 developers. Multi-tier application with
-                            thick Java Swing-based client and clustered server environment powered by Weblogic servers and Oracle Database.
-                            I was responsible for team which had to create client layer of this system.
+                                Central database storing information about all vehicles, their owners and drivers in Poland.
+                                Large scale system - 3500 clients, 4 TB of data, 20 developers. Multi-tier application with
+                                thick Java Swing-based client and clustered server environment powered by Weblogic servers and Oracle Database.
+                                I was responsible for team which had to create client layer of this system.
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -1105,11 +1136,11 @@
                         <h2 class="p-name">Integrated Administration and Control System [IACS]</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Integrated Administration and Control System (IACS) has following key objectives:
-                            Authorisation, execution and accounting of direct payments for agricultural producers (farmers),
-                            in accordance with the terms specified by the EU in the Common Agricultural Policy Identification and registration of farm
-                            animals (cattle, sheep, goats, pigs) in accordance with the veterinary requirements of the EU. It is a distributed system with
-                            multi-layered architecture. Some information about scale of the system:
+                                Integrated Administration and Control System (IACS) has following key objectives:
+                                Authorisation, execution and accounting of direct payments for agricultural producers (farmers),
+                                in accordance with the terms specified by the EU in the Common Agricultural Policy Identification and registration of farm
+                                animals (cattle, sheep, goats, pigs) in accordance with the veterinary requirements of the EU. It is a distributed system with
+                                multi-layered architecture. Some information about scale of the system:
                             </p>
                             <ul>
                                 <li>8 500 users</li>
@@ -1141,9 +1172,9 @@
                                 <li>Reads on demand</li>
                             </ul>
                             <p>
-                            It was a fundamental component of this system and all business cases are realised using this
-                            component. This solution is similar to Hibernate library but without part which refers to
-                            mapping object to database tables.
+                                It was a fundamental component of this system and all business cases are realised using this
+                                component. This solution is similar to Hibernate library but without part which refers to
+                                mapping object to database tables.
                             </p>
 
                             <p>Furthermore I realized mass farmers spotting procedure. Spotting was based on risk factors
@@ -1188,8 +1219,8 @@
                         <h2 class="p-name">HaHu</h2>
                         <div class="p-experience__summary">
                             <p>
-                            Project for petrol wholesaler. It was used to control ordering and selling petrol as well as in
-                            the production process.
+                                Project for petrol wholesaler. It was used to control ordering and selling petrol as well as in
+                                the production process.
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
@@ -1227,8 +1258,8 @@
                         <h2 class="p-name">POTIS Delphi Synchronizer</h2>
                         <div class="p-experience__summary">
                             <p>
-                            It was project of code synchronizer which generates code from UML project
-                            (SelectEnterprise6.2) and reverses code (Delphi) to repository.
+                                It was project of code synchronizer which generates code from UML project
+                                (SelectEnterprise6.2) and reverses code (Delphi) to repository.
                             </p>
                         </div>
                         <div class="p-experience__tool-set">
