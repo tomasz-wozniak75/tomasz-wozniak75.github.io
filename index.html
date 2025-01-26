@@ -41,7 +41,7 @@
             <p>
                 I'm a multilingual software developer and tech lead.
                 My main speciality is Java development with over 20 years of experience.
-                In my toolset I have also languages like Kotlin, Groovy, TypeScript, and now I'm moving to Rust.
+                In my toolset I have also languages like Kotlin, Groovy, TypeScript, and Rust.
             </p>
         </div>
 
@@ -247,23 +247,15 @@
             <div class="p-experience__container">
 
                 <div class="p-experience h-event">
-                    <h2 class="p-name">Rust bootcamp</h2>
-                    <time class="dt-start" datetime="11/2024">11/2024</time>
-                    <time class="dt-end" datetime="01/2025">01/2025</time>
-                    <div class="p-experience__summary">
-                        <p>I spent two months on learning Rust using Udemy courses, books and small coding exercises.</p>
-                    </div>
-                </div>
-
-                <div class="p-experience h-event">
                     <h2 class="p-name">Smart energy home automation</h2>
                     <time class="dt-start" datetime="11/2024">09/2024</time>
                     <time class="dt-end" datetime="01/2025">11/2024</time>
                     <div class="p-experience__summary">
                         <p>Smart energy home automation is a side project to charge car batteries with the lowest
-                           electricity prices when dynamic electricity tariff is selected in Poland. Server hosted on NodeJs
-                           controls charging in hours with best prices by triggering Tuya power switches via REST API.
-                            ReactJs application is provided to schedule charging.
+                           electricity prices when dynamic electricity tariff is selected in Poland. Server implemented
+                           in Rust with an axum library, schedules charging to select hours with the lowest prices by turning
+                            Tuya power switches via REST API.
+                            ReactJs application is provided to control this process.
                         </p>
                     </div>
                     <div class="p-experience__links">
@@ -275,14 +267,13 @@
                     </div>
                     <div class="p-experience__tool-set">
                         <ul>
+                            <li>Rust</li>
+                            <li>axum</li>
                             <li>TypeScript</li>
                             <li>ReactJs</li>
-                            <li>Express</li>
-                            <li>Node</li>
                             <li>Rest</li>
                             <li>Tuya home automation</li>
                             <Li>Home Assistant</Li>
-                            <Li>Raspberry Pi</Li>
                         </ul>
                     </div>
                 </div>
